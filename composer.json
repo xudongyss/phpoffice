@@ -9,5 +9,10 @@
             "name": "xudongyss",
             "email": "xudong.yss@gmail.com"
         }
-    ]
+    ],
+	"autoload": {
+        "psr-4": {
+            "XuDongYss\\PhpOffice\\": "src/"
+        }
+    }
 }
