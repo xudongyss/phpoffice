@@ -1,0 +1,13 @@
+{
+    "name": "xudongyss/phpoffice",
+    "type": "library",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.15"
+    },
+    "authors": [
+        {
+            "name": "xudongyss",
+            "email": "xudong.yss@gmail.com"
+        }
+    ]
+}
