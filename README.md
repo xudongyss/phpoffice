@@ -68,3 +68,44 @@ Array
 )
 ```
 
+#### 导出
+
+```php
+$filename = '导出测试';
+$_data = [];
+$column_field = [
+    ['column'=> '用户ID', 'field'=> 'id', 'data_type'=> 's'],
+    ['column'=> '手机号', 'field'=> 'mobile', 'data_type'=> 's'],
+    ['column'=> '昵称', 'field'=> 'nickname'],
+    ['column'=> '余额', 'field'=> 'avail_money'],
+    ['column'=> '已提现金额', 'field'=> 'cash_money'],
+    ['column'=> '总余额', 'field'=> 'all_money'],
+    ['column'=> 'VIP', 'field'=> 'vip_title'],
+    ['column'=> '银行卡号', 'field'=> 'bank_card', 'data_type'=> 's'],
+    ['column'=> '开户银行', 'field'=> 'bank_name'],
+    ['column'=> '持卡人姓名', 'field'=> 'bank_realname'],
+    ['column'=> '注册时间', 'field'=> 'register_time'],
+];
+$excel->export($filename, $_data, $column_field);
+```
+
+```php
+//$_data
+Array
+(
+    [0] => Array
+        (
+            [id] => 100000012
+            [mobile] => 13500000021
+            [nickname] => 13500****21
+            [all_money] => 1600000.00
+            [avail_money] => 1600000.00
+            [cash_money] => 0.00
+            [bank_name] => Ngân hàng Ngoại thương Việt Nam
+            [bank_card] => 363636636636
+            [bank_realname] => 啦啦啦肯
+            [vip_title] => 普通会员
+        )
+)
+```
+
